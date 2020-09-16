@@ -1,0 +1,22 @@
+.cardItem{
+  border: 1px gray;
+  margin-bottom: 4rem !important;
+  min-height: 20rem;
+  
+}
+.rowWrapper{
+    margin-top: 3rem;  
+}
+.categoryWrapper{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.categoryItem{
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.categoryItem:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

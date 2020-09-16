@@ -1,0 +1,45 @@
+.wrapper {
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 0rem !important;
+}
+
+.wrapperContainer{
+    background-color: black;
+}
+
+.labelContact{
+    color: yellow;
+    font-size: 0.6rem;
+}
+.buttonContact{
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.titleContact, .subtitleContact{
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+}
+.titleContact{
+    font-size: 2rem;
+}
+.subtitleContact{
+    font-size: 1.3rem;
+}
+.content-Contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*sm - Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .titleContact{
+        font-size: 4rem;
+    }
+    .subtitleContact{
+        font-size: 2rem;
+    }
+ }

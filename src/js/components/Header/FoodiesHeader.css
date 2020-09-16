@@ -1,0 +1,52 @@
+.app-header {
+    height: 14rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title, .subtitle {
+    color: black;
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+}
+.subtitle{
+    background-color: yellow;
+}
+.content-Title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.imageHamburguer{
+    padding-top: 3rem;
+}
+/*sm - Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .app-header{
+        height: 30rem;
+    }
+    .title, .subtitle{
+        font-size: 4.9rem !important;
+    }
+    .imageHamburguer{
+        padding-top: 6rem;
+    }
+ }
+
+ /*md - Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .app-header{
+        height: 20rem;
+    }
+    .title, .subtitle{
+        font-size: 3.5rem !important;
+    }
+    .imageHamburguer{
+        padding-top: 4rem;
+    }
+ }
+
+  
