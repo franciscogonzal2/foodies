@@ -4,6 +4,18 @@
     margin-top: 0rem !important;
 }
 
-.carrousel{
-    padding-top: 10rem;
+
+.titleWhoWeAre{
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.subtitleWhoWeAre{
+    color: gray;
+    font-family: 'Lucida Sans';
+}
+
+.whoWeAreContent{
+    padding: 1rem 1rem;
 }

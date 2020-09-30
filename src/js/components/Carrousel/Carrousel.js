@@ -1,37 +1,58 @@
 import Carousel from 'react-bootstrap/Carousel'
-import React from 'react';
-import PropTypes from 'prop-types';
-import "./Carrousel.css"
+import React, { Component } from 'react';
+import "./Carrousel.css";
+import bottle from "../../../image/bottle.png";
 
-const Carrousel = props => {
+class Carrousel extends Component {
+
+  render() {
     return (
-        <div className={"containerCarrousel"}>
-        <Carousel>
+      <Carousel className={"wrapperCarousel"}>
         <Carousel.Item>
+          <div className={"itemCarousel"}>
+            <img
+              className="d-block w-100"
+              src={bottle}
+              alt="First slide"
+            />
+          </div>
           <Carousel.Caption>
-            <div>First slide label</div>
-            <div>Nulla vitae elit libero, a pharetra augue mollis interdum.</div>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
+          <div className={"itemCarousel"}>
+            <img
+              className="d-block w-100"
+              src={bottle}
+              alt="Third slide"
+            />
+          </div>
           <Carousel.Caption>
-          <div>First slide label</div>
-            <div>Nulla vitae elit libero, a pharetra augue mollis interdum.</div>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
+          <div className={"itemCarousel"}>
+            <img
+              className="d-block w-100"
+              src={bottle}
+              alt="Third slide"
+            />
+          </div>
           <Carousel.Caption>
-          <div>First slide label</div>
-            <div>Nulla vitae elit libero, a pharetra augue mollis interdum.</div>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      </div>
     );
-};
+  }
+}
 
-Carrousel.propTypes = {
-    title: PropTypes.string,
-};
+export default Carrousel
 
-export default Carrousel;
